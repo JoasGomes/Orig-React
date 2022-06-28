@@ -24,7 +24,7 @@ import React from 'react';
   const desconto = 50;
   const preco = 250;
   return <p>{preco - desconto}</p>;
-}; */
+}; 
 
 const titulo = <h1>esse é meu titulo</h1>;
 
@@ -44,6 +44,51 @@ const App = () => {
       </p>
       <p className={ativo ? 'ativo' : 'inativo'}>{(random * 1000) / 50}</p>
     </>
+  );
+}; */
+
+//EXERCICIO
+const luana = {
+  cliente: 'luana',
+  idade: 27,
+  compras: [
+    { nome: 'notebook', preco: 'R$ 2500' },
+    { nome: 'geladeira', preco: 'R$ 3000' },
+    { nome: 'smartphone', preco: 'R$ 1500' },
+  ],
+  ativa: true,
+};
+
+const mario = {
+  cliente: 'mario',
+  idade: 31,
+  compras: [
+    { nome: 'notebook', preco: 'R$ 2500' },
+    { nome: 'geladeira', preco: 'R$ 3000' },
+    { nome: 'smartphone', preco: 'R$ 1500' },
+    { nome: 'guitarra', preco: 'R$ 1500' },
+  ],
+  ativa: false,
+};
+
+const App = () => {
+  const dados = luana;
+
+  const total = dados.compras
+    .map((item) => Number(item.preco.replace('R$ ', '')))
+    .reduce((a, b) => a + b);
+  return (
+    <div>
+      <p>Nome: {dados.cliente}</p>
+      <p>Idade: {dados.idade}</p>
+      <p>
+        Situação:{' '}
+        <span style={{ color: dados.ativa ? 'green' : 'red' }}>
+          {dados.ativa ? 'ativa' : 'inativa'}
+        </span>
+      </p>
+      <p>Total: R$ {total}</p>
+    </div>
   );
 };
 export default App;
