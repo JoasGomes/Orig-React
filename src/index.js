@@ -7,5 +7,6 @@ import Propriedades from './propriedades';
 import Estados from './estados';
 import Estados2 from './estados2';
 import UseEffect from './useEffect';
+import UseRef from './useRef';
 
-ReactDOM.createRoot(document.getElementById('root')).render(<UseEffect />);
+ReactDOM.createRoot(document.getElementById('root')).render(<UseRef />);
