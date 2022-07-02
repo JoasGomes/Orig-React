@@ -6,5 +6,6 @@ import Eventos from './eventos';
 import Propriedades from './propriedades';
 import Estados from './estados';
 import Estados2 from './estados2';
+import UseEffect from './useEffect';
 
-ReactDOM.createRoot(document.getElementById('root')).render(<Estados2 />);
+ReactDOM.createRoot(document.getElementById('root')).render(<UseEffect />);
