@@ -8,5 +8,6 @@ import Estados from './estados';
 import Estados2 from './estados2';
 import UseEffect from './useEffect';
 import UseRef from './useRef';
+import UseMemo from './useMemo';
 
 ReactDOM.createRoot(document.getElementById('root')).render(<UseRef />);
