@@ -11,5 +11,7 @@ import UseEffect from './useEffect';
 import UseEffect2 from './useEffect2';
 import UseRef from './useRef';
 import UseMemo from './useMemo';
+import Forms from './formularios';
+import FormExe from './formsExer';
 
-ReactDOM.createRoot(document.getElementById('root')).render(<UseEffect2 />);
+ReactDOM.createRoot(document.getElementById('root')).render(<FormExe />);
