@@ -13,5 +13,8 @@ import UseRef from './useRef';
 import UseMemo from './useMemo';
 import Forms from './formularios';
 import FormExe from './formsExer';
+import InputComp from './input-components';
+import SelectComp from './select-components';
+import CheckBox from './checkbox';
 
-ReactDOM.createRoot(document.getElementById('root')).render(<FormExe />);
+ReactDOM.createRoot(document.getElementById('root')).render(<InputComp />);
