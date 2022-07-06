@@ -16,5 +16,6 @@ import FormExe from './formsExer';
 import InputComp from './input-components';
 import SelectComp from './select-components';
 import CheckBox from './checkbox';
+import Desafio from './desafio';
 
-ReactDOM.createRoot(document.getElementById('root')).render(<InputComp />);
+ReactDOM.createRoot(document.getElementById('root')).render(<Desafio />);
