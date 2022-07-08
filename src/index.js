@@ -17,5 +17,6 @@ import InputComp from './input-components';
 import SelectComp from './select-components';
 import CheckBox from './checkbox';
 import Desafio from './desafio';
+import Reduce from './useReducer';
 
-ReactDOM.createRoot(document.getElementById('root')).render(<Desafio />);
+ReactDOM.createRoot(document.getElementById('root')).render(<Reduce />);
